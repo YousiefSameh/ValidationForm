@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightgreen;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 375px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+main div {
+    text-align: center;
+}
+
+main div h1 {
+    font-size: 34px;
+}
+
+main div {
+    color: red;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+main form {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main form input:not(:last-child) {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.2s all ease;
+}
+
+main form input:not(:last-child):focus {
+    border-color: lightgreen;
+}
+
+main form input:last-child {
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid lightgreen;
+    border-radius: 5px;
+    color: lightgreen;
+    transition: 0.2s all ease;
+    cursor: pointer;
+}
+
+main form input:last-child:hover {
+    background-color: lightgreen;
+    color: white;
+}
